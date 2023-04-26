@@ -1,0 +1,354 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  background-image: url("./src/images/about-banner-1.jpg");
+
+  height: 60rem;
+  width: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex: wrap;
+}
+.image-1 {
+  width: 50vh;
+  height: auto;
+  margin-left: 50px;
+  padding: 10px;
+  flex: 70%;
+}
+
+.contact {
+  padding: 1rem;
+  flex: 20%;
+}
+.email {
+  font-size: 2rem;
+
+  padding: 1rem;
+  flex: 10%;
+}
+
+/* navbar-1 */
+/* The navbar */
+.navbar {
+  padding: 1rem 1.5rem;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topnav {
+  display: flex;
+  list-style-type: none;
+  color: white;
+  overflow: hidden;
+
+  text-decoration: none;
+}
+li {
+  padding: 0.5rem;
+}
+
+/* The navbar2 */
+.navbar-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #f2e8e8;
+  position: relative;
+}
+
+.navbar-nav-2 {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item-2 {
+  margin: 0 1rem;
+}
+
+.nav-link-2 {
+  color: #1b1616;
+  text-decoration: none;
+  padding: 0.1rem;
+}
+
+.burger {
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav-2 {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    margin: 3rem;
+    width: 1rem;
+    height: auto;
+    color: white;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 3rem;
+    height: 3px;
+    background-color: #141212;
+    margin: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .line2 {
+    opacity: 0;
+  }
+
+  .change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 8rem;
+
+    background-color: #e7e0e0;
+    opacity: 0.5;
+    width: 40rem;
+    height: auto;
+    z-index: 1;
+
+    transition: all 0.5s ease;
+  }
+
+  .nav-active .nav-item {
+    margin: 1rem 1rem;
+  }
+}
+
+.container-1 {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 4rem;
+}
+.container-2 {
+  background-image: url("./src/images/banner-1.jpg");
+  height: 28rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.child-2 {
+  align-items: center;
+  font-family: sans-serif;
+  height: auto;
+  width: 100%;
+
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+
+  margin-bottom: 1rem;
+
+  background-color: white;
+  opacity: 0.8;
+}
+.child-3 {
+  border: 0.2rem solid black;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.container-3 {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+.container-4 {
+  background-image: url("./src/images/banner-2.jpg");
+  height: 30rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.child-4 {
+  color: white;
+  font-family: sans-serif;
+  height: 25rem;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+
+  margin: 0.3rem;
+}
+.child-5 {
+  border: 0.2rem solid rgb(248, 243, 243);
+  display: inline-block;
+  padding: 1rem;
+  width: 30rem;
+  height: auto;
+}
+
+.container-5 {
+  font-size: 1.8rem;
+  margin: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.container-6 {
+  background-image: url("./src/images/banner-3.jpg");
+  height: 32rem;
+  font-family: "Courier New", Courier, monospace;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+footer {
+  color: white;
+  background-color: black;
+  padding: 1.5rem;
+}
+.container-7 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.child-6 {
+  padding: 1rem;
+  flex: 70%;
+}
+.child-7 {
+  flex: 20%;
+  margin: 0;
+}
+.child-8 {
+  padding: 1rem;
+  flex: 5%;
+  font-size: 2rem;
+}
+.main-image {
+  max-width: 100%;
+  width: 1000px;
+}
+.fa-solid {
+  font-size: 1.8rem;
+}
+
+/* media quaries for nav bar */
+
+@media (max-width: 500px) {
+  .header1 {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .navbar-2 {
+    display: none;
+  }
+}
+
+/* media quaries for footer */
+
+@media (max-width: 700px) {
+  .child-6,
+  child-5,
+  child-8 {
+    flex: 100%;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .contact-div {
+    visibility: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  .bg-img {
+    background-image: url(./src/images/about-banner.jpg);
+  }
+}
+
+@media (max-width: 600px) {
+  .container-4 {
+    background-image: url(./src/images/mobile-2.jpg);
+  }
+  .container-2 {
+    background-image: url(./src/images/mobile-1.jpg);
+  }
+  .container-6 {
+    background-image: url(./src/images/mobile-3.jpg);
+  }
+}
+.contact-div {
+  display: flex;
+  width: 30%;
+}
