@@ -98,7 +98,7 @@ li {
 }
 
 .nav-link-2 {
-  color: #1b1616;
+  color: #000000;
   text-decoration: none;
   padding: 0.1rem;
 }
@@ -114,6 +114,8 @@ li {
   }
 
   .burger {
+    font-family: serifx;
+    font-size: 4rem;
     display: block;
     cursor: pointer;
     position: absolute;
@@ -130,7 +132,7 @@ li {
   .line3 {
     width: 3rem;
     height: 3px;
-    background-color: #141212;
+    background-color: #fefdfd;
     margin: 1rem;
     transition: all 0.3s ease;
   }
@@ -200,7 +202,7 @@ li {
   margin-bottom: 1rem;
 
   background-color: white;
-  opacity: 0.8;
+  opacity:2;
 }
 .child-3 {
   border: 0.2rem solid black;
@@ -352,3 +354,5 @@ footer {
   display: flex;
   width: 30%;
 }
+
+/* end */
